@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ==================== SEO ==================== -->
+<title>SORA-DEV CONSULTING — Ahmed Ali SOILIHI | Data Analyst, Data Quality &amp; Facturation ERP</title>
+<meta name="description" content="Ahmed Ali SOILIHI, consultant indépendant Data Analyst &amp; Data Quality. Audit, fiabilisation et pilotage des données de facturation en environnement ERP : SQL, Power Query, DAX, Power BI, e-invoicing.">
+<meta name="keywords" content="data analyst, data quality, facturation, ERP, e-invoicing, Power BI, DAX, Power Query, SQL, consultant indépendant, SORADEV CONSULTING">
+<meta name="author" content="Ahmed Ali SOILIHI — SORADEV CONSULTING">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.soradev-consulting.fr/">
+
+<!-- ==================== Open Graph / LinkedIn ==================== -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="SORA-DEV CONSULTING">
+<meta property="og:title" content="SORA-DEV CONSULTING — Ahmed Ali SOILIHI | Data Analyst &amp; Data Quality">
+<meta property="og:description" content="Fiabiliser la donnée. Sécuriser la décision. Audit et pilotage des données de facturation ERP : SQL → Power Query → Modèle relationnel → DAX → Power BI.">
+<meta property="og:url" content="https://www.soradev-consulting.fr/">
+<!-- TODO : ajouter assets/og-image.jpg (1200x630px) puis décommenter la ligne ci-dessous -->
+<!-- <meta property="og:image" content="https://www.soradev-consulting.fr/assets/og-image.jpg"> -->
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ==================== Favicon (SVG inline, aucune dépendance externe) ==================== -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2300265A'/%3E%3Cpath d='M18 40 L18 34 Q18 30 24 30 L30 30 Q34 30 34 26 Q34 22 30 22 L20 22' stroke='%23FB7A1F' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='40' cy='40' r='5' fill='%23FB7A1F'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#00265A">
+
+<!-- ==================== Polices Google Fonts ==================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<!-- ==================== Feuille de style ==================== -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ==================== Données structurées (SEO) ==================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SORADEV CONSULTING",
+  "founder": {
+    "@type": "Person",
+    "name": "Ahmed Ali SOILIHI",
+    "jobTitle": "Consultant Data Analyst / Data Quality"
+  },
+  "description": "Audit, fiabilisation et pilotage des données de facturation en environnement ERP : SQL, Power Query, DAX, Power BI, e-invoicing.",
+  "areaServed": "Île-de-France, France",
+  "slogan": "Fiabiliser la donnée. Sécuriser la décision."
+}
+</script>
+</head>
+<body>
+
+<!-- Lien d'évitement pour la navigation clavier / lecteurs d'écran -->
+<a class="skip-link" href="#contenu-principal">Aller directement au contenu</a>
+
+<!-- ====================================================================
+     SPRITE SVG — icônes vectorielles inline réutilisées via <use>.
+     Aucune icône n'est chargée depuis un service externe.
+     ==================================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Navigation / UI -->
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+
+    <!-- Domaines d'expertise -->
+    <symbol id="icon-data-analysis" viewBox="0 0 24 24"><path d="M4 20V10M11 20V4M18 20v-7"/><path d="M3 20h18"/></symbol>
+    <symbol id="icon-data-quality" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="icon-invoice" viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6z"/><path d="M15 2v4h4"/><path d="M9 12h6M9 15.5h6M9 8.5h3"/></symbol>
+    <symbol id="icon-bi" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="11" width="8" height="10" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></symbol>
+    <symbol id="icon-erp" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="5" rx="1.5"/><rect x="3" y="10.5" width="18" height="5" rx="1.5"/><rect x="3" y="17" width="18" height="5" rx="1.5"/><circle cx="7" cy="6.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="7" cy="13" r="0.8" fill="currentColor" stroke="none"/><circle cx="7" cy="19.5" r="0.8" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-einvoice" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M4 10v9a2 2 0 002 2h1"/><path d="M9.5 13.5L12 16l4-4.5"/></symbol>
+
+    <!-- Trame projets (6 rubriques) -->
+    <symbol id="icon-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.5a2.8 2.8 0 115 1.7c-.6.6-1.7 1-1.7 2.3"/><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5V18c0 1.7 3.6 3 8 3s8-1.3 8-3V5.5"/><path d="M4 11.8c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="icon-flow" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2.3"/><circle cx="19" cy="6" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.2 7l3.6 9.5M16.8 7l-3.6 9.5M7.3 6h9.4"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="M20 20l-5.2-5.2"/></symbol>
+    <symbol id="icon-screen" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></symbol>
+
+    <!-- Contact -->
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M5.5 3.5h3l1.5 4.5-2 1.5a13 13 0 006.5 6.5l1.5-2 4.5 1.5v3c0 1-1 2-2 2C11 20.5 3.5 13 3.5 5.5c0-1 1-2 2-2z"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M7.5 10v6.2M7.5 7.3v.1M12 16.2V13c0-1.5 1-2.5 2.3-2.5S16.5 11.5 16.5 13v3.2M12 13v3.2" fill="none"/></symbol>
+
+    <!-- Divers -->
+    <symbol id="icon-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></symbol>
+    <symbol id="icon-nodes" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="12" r="2"/><path d="M6.8 10.8L10.2 6.8M6.8 13.2L10.2 17.2M13.8 6.8L17.2 10.8M13.8 17.2L17.2 13.2"/></symbol>
+  </defs>
+</svg>
+
+<!-- ====================================================================
+     EN-TÊTE — navigation sticky, ancre logo, menu mobile accessible
+     ==================================================================== -->
+<header class="site-header" id="site-header">
+  <div class="container site-header__inner">
+
+    <div class="header-identity">
+      <!-- Photo d'Ahmed Ali SOILIHI, en haut à gauche du site -->
+      <img src="assets/ahmed-soilihi.jpg" alt="Photo d'Ahmed Ali SOILIHI, consultant Data Analyst chez SORADEV CONSULTING" class="header-identity__photo" width="44" height="44" loading="eager">
+
+      <a href="#accueil" class="brand" aria-label="SORA-DEV CONSULTING — retour à l'accueil">
+        <!-- Logo image avec repli texte stylé si le fichier est absent/en erreur -->
+        <img src="assets/logo-soradev.jpg" alt="Logo SORA-DEV CONSULTING" class="brand__logo" id="brand-logo" width="160" height="42">
+        <span class="brand__fallback" id="brand-fallback" hidden>
+          <span class="brand__fallback-main"><span class="brand__fallback-sora">SORA</span><span class="brand__fallback-dev">-DEV</span> CONSULTING</span>
+        </span>
+      </a>
+    </div>
+
+    <button type="button" class="hamburger" id="hamburger-btn" aria-expanded="false" aria-controls="primary-nav">
+      <span class="visually-hidden">Ouvrir le menu de navigation</span>
+      <svg class="icon icon-open" aria-hidden="true"><use href="#icon-menu"></use></svg>
+      <svg class="icon icon-close" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Navigation principale">
+      <ul class="primary-nav__list">
+        <li><a href="#accueil" class="primary-nav__link">Accueil</a></li>
+        <li><a href="#profil" class="primary-nav__link">Qui suis-je</a></li>
+        <li><a href="#expertise" class="primary-nav__link">Expertise</a></li>
+        <li><a href="#projets" class="primary-nav__link">Projets</a></li>
+        <li><a href="#experiences" class="primary-nav__link">Expériences</a></li>
+        <li><a href="#contact" class="primary-nav__link primary-nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main id="contenu-principal">
+
+  <!-- ==================================================================
+       1. HERO / COUVERTURE
+       ================================================================== -->
+  <section id="accueil" class="hero" aria-label="Présentation">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="hero__nodes" viewBox="0 0 900 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="hero__nodes-lines" stroke="#FB7A1F" stroke-width="1" fill="none" opacity="0.35">
+          <path d="M60 480 L220 360 L400 420 L560 260 L740 300 L860 140"/>
+          <path d="M120 120 L280 220 L460 150 L620 240 L800 190"/>
+        </g>
+        <g class="hero__nodes-dots" fill="#FB7A1F">
+          <circle cx="60" cy="480" r="4"/><circle cx="220" cy="360" r="4"/><circle cx="400" cy="420" r="4"/>
+          <circle cx="560" cy="260" r="4"/><circle cx="740" cy="300" r="4"/><circle cx="860" cy="140" r="4"/>
+          <circle cx="120" cy="120" r="4"/><circle cx="280" cy="220" r="4"/><circle cx="460" cy="150" r="4"/>
+          <circle cx="620" cy="240" r="4"/><circle cx="800" cy="190" r="4"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="container hero__inner">
+      <p class="hero__eyebrow" data-animate>SORA-DEV CONSULTING · Île-de-France</p>
+      <h1 class="hero__title" data-animate>DATA ANALYST &amp; DATA QUALITY</h1>
+      <p class="hero__subtitle" data-animate>Facturation • Data Quality • Business Intelligence • E-Invoicing — Consultant indépendant</p>
+
+      <p class="hero__promise" data-animate>
+        <strong>Transformer les données opérationnelles en informations fiables</strong> pour sécuriser la facturation et faciliter la décision.
+      </p>
+
+      <div class="hero__cta-group" data-animate>
+        <a href="#projets" class="btn btn--accent">
+          Voir les projets
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        </a>
+        <a href="#contact" class="btn btn--outline">Me contacter</a>
+      </div>
+
+      <ul class="chip-list" data-animate aria-label="Compétences clés">
+        <li class="chip">Power BI</li>
+        <li class="chip">SQL</li>
+        <li class="chip">DAX</li>
+        <li class="chip">Power Query</li>
+        <li class="chip">ERP</li>
+        <li class="chip">Data Quality</li>
+      </ul>
+    </div>
+
+    <!-- Bloc chiffres clés — compteurs animés au scroll (voir js/script.js) -->
+    <div class="stats" data-animate>
+      <div class="container">
+        <dl class="stats__grid" id="stats-grid">
+
+          <div class="stats__item">
+            <dd class="stats__value">
+              <span class="stats__number" data-count-to="20" data-suffix="+">0</span>
+            </dd>
+            <dt class="stats__label">ans d'expérience professionnelle</dt>
+          </div>
+
+          <div class="stats__item">
+            <dd class="stats__value">
+              <span class="stats__number" data-count-to="56358">0</span>
+            </dd>
+            <dt class="stats__label">documents analysés</dt>
+          </div>
+
+          <div class="stats__item">
+            <dd class="stats__value">
+              <span class="stats__number" data-count-to="914.2" data-decimals="1" data-suffix=" M€">0</span>
+            </dd>
+            <dt class="stats__label">de volume de facturation analysé</dt>
+          </div>
+
+          <div class="stats__item">
+            <dd class="stats__value">
+              <span class="stats__number" data-count-to="4615">0</span>
+            </dd>
+            <dt class="stats__label">lignes de commandes rapprochées</dt>
+          </div>
+
+          <div class="stats__item">
+            <dd class="stats__value">
+              <span class="stats__number" data-count-to="6255">0</span>
+            </dd>
+            <dt class="stats__label">lignes de factures rapprochées</dt>
+          </div>
+
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================
+       2. QUI SUIS-JE ?
+       ================================================================== -->
+  <section id="profil" class="section" aria-labelledby="profil-title">
+    <div class="container">
+      <p class="section__kicker" data-animate>Qui suis-je ?</p>
+      <h2 id="profil-title" class="section__title" data-animate>Consultant Data Analyst / Data Quality</h2>
+      <p class="section__lead" data-animate>
+        J'interviens à l'interface entre les données, les processus métier, la facturation et les systèmes d'information —
+        pour transformer des données brutes et dispersées en un pilotage fiable et actionnable.
+      </p>
+
+      <div class="positioning" data-animate aria-label="Mon positionnement, du traitement de la donnée à la décision">
+        <p class="positioning__caption">Mon positionnement</p>
+
+        <ol class="positioning__timeline">
+          <li class="positioning__node">
+            <span class="positioning__badge">1</span>
+            <h3 class="positioning__title">DATA</h3>
+            <ul class="positioning__items">
+              <li>Analyse</li>
+              <li>Contrôle</li>
+              <li>Qualité</li>
+              <li>Modélisation</li>
+            </ul>
+          </li>
+
+          <li class="positioning__connector" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><use href="#icon-chevron-down"></use></svg>
+          </li>
+
+          <li class="positioning__node">
+            <span class="positioning__badge">2</span>
+            <h3 class="positioning__title">MÉTIER</h3>
+            <ul class="positioning__items">
+              <li>Facturation</li>
+              <li>ERP</li>
+              <li>Processus</li>
+              <li>Finance</li>
+            </ul>
+          </li>
+
+          <li class="positioning__connector" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><use href="#icon-chevron-down"></use></svg>
+          </li>
+
+          <li class="positioning__node">
+            <span class="positioning__badge">3</span>
+            <h3 class="positioning__title">DÉCISION</h3>
+            <ul class="positioning__items">
+              <li>KPI</li>
+              <li>Reporting</li>
+              <li>Power BI</li>
+              <li>Pilotage</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <div class="context-banner" data-animate>
+        <svg class="icon context-banner__icon" aria-hidden="true"><use href="#icon-einvoice"></use></svg>
+        <p>
+          À compter du <strong>1er septembre 2026</strong>, la facturation électronique devient obligatoire pour les
+          entreprises françaises. Entre exigences réglementaires (PPF, PDP, Chorus Pro, Factur-X, UBL/CII, EN&nbsp;16931)
+          et fiabilité des données à garantir, j'accompagne les organisations dans l'audit et la sécurisation de leur
+          chaîne de facturation en environnement ERP.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================
+       3. DOMAINES D'EXPERTISE
+       ================================================================== -->
+  <section id="expertise" class="section section--alt" aria-labelledby="expertise-title">
+    <div class="container">
+      <p class="section__kicker" data-animate>Domaines d'expertise</p>
+      <h2 id="expertise-title" class="section__title" data-animate>Une chaîne de compétences complète, de la donnée à la décision</h2>
+
+      <div class="expertise-grid">
+
+        <article class="expertise-card" data-animate>
+          <div class="expertise-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-data-analysis"></use></svg></div>
+          <h3 class="expertise-card__title">Data Analysis</h3>
+          <p class="expertise-card__desc">Analyse • Exploration • KPI • Reporting</p>
+        </article>
+
+        <article class="expertise-card" data-animate>
+          <div class="expertise-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-data-quality"></use></svg></div>
+          <h3 class="expertise-card__title">Data Quality</h3>
+          <p class="expertise-card__desc">Contrôles • Cohérence • Complétude • Anomalies</p>
+        </article>
+
+        <article class="expertise-card" data-animate>
+          <div class="expertise-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-invoice"></use></svg></div>
+          <h3 class="expertise-card__title">Facturation</h3>
+          <p class="expertise-card__desc">Commandes • Factures • Avoirs • Rapprochement</p>
+        </article>
+
+        <article class="expertise-card" data-animate>
+          <div class="expertise-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-bi"></use></svg></div>
+          <h3 class="expertise-card__title">Business Intelligence</h3>
+          <p class="expertise-card__desc">Power BI • DAX • Power Query • SQL</p>
+        </article>
+
+        <article class="expertise-card" data-animate>
+          <div class="expertise-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-erp"></use></svg></div>
+          <h3 class="expertise-card__title">ERP</h3>
+          <p class="expertise-card__desc">SAP • Coupa • Qualiac • Divalto</p>
+        </article>
+
+        <article class="expertise-card" data-animate>
+          <div class="expertise-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-einvoice"></use></svg></div>
+          <h3 class="expertise-card__title">E-Invoicing</h3>
+          <p class="expertise-card__desc">Dématérialisation • Qualité des données • Flux • E-invoicing</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================
+       4. PROJETS / ÉTUDES DE CAS
+       ================================================================== -->
+  <section id="projets" class="section" aria-labelledby="projets-title">
+    <div class="container">
+      <p class="section__kicker" data-animate>Études de cas</p>
+      <h2 id="projets-title" class="section__title" data-animate>Projets &amp; réalisations</h2>
+      <p class="section__lead" data-animate>
+        Cinq missions représentatives, documentées selon la même trame en six rubriques :
+        problématique, données mobilisées, méthodologie, analyse, présentation et résultats.
+      </p>
+
+      <div class="project-grid">
+
+        <!-- ---------- Carte Projet 1 ---------- -->
+        <article class="project-card" data-animate>
+          <p class="project-card__number">01</p>
+          <h3 class="project-card__title">Analyse et réduction du taux d'avoirs sur le cycle de facturation</h3>
+          <p class="project-card__excerpt">Identifier les principaux motifs d'avoirs pour agir sur les causes racines et sécuriser le chiffre d'affaires facturé.</p>
+          <p class="project-card__result"><strong>-15,9&nbsp;points</strong> de taux d'avoirs entre 2023 et 2025</p>
+          <button type="button" class="btn btn--ghost project-card__trigger" aria-haspopup="dialog" aria-controls="modal-projet-1" data-open-modal="modal-projet-1">
+            Voir l'étude de cas <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </button>
+        </article>
+
+        <!-- ---------- Carte Projet 2 ---------- -->
+        <article class="project-card" data-animate>
+          <p class="project-card__number">02</p>
+          <h3 class="project-card__title">Audit et Data Quality du processus de facturation</h3>
+          <p class="project-card__excerpt">Détecter les anomalies d'un processus de facturation fortement automatisé et dématérialisé (ERP Qualiac).</p>
+          <p class="project-card__result"><strong>5&nbsp;053&nbsp;avoirs</strong> nettoyés dans la base métier</p>
+          <button type="button" class="btn btn--ghost project-card__trigger" aria-haspopup="dialog" aria-controls="modal-projet-2" data-open-modal="modal-projet-2">
+            Voir l'étude de cas <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </button>
+        </article>
+
+        <!-- ---------- Carte Projet 3 ---------- -->
+        <article class="project-card" data-animate>
+          <p class="project-card__number">03</p>
+          <h3 class="project-card__title">Dashboard de pilotage de la qualité et de la facturation</h3>
+          <p class="project-card__excerpt">Offrir aux utilisateurs métier une vision consolidée et actionnable de la qualité des données de facturation.</p>
+          <p class="project-card__result"><strong>SQL → Power Query → DAX → Power BI</strong> maîtrisé de bout en bout</p>
+          <button type="button" class="btn btn--ghost project-card__trigger" aria-haspopup="dialog" aria-controls="modal-projet-3" data-open-modal="modal-projet-3">
+            Voir l'étude de cas <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </button>
+        </article>
+
+        <!-- ---------- Carte Projet 4 ---------- -->
+        <article class="project-card" data-animate>
+          <p class="project-card__number">04</p>
+          <h3 class="project-card__title">Détection automatisée des écarts entre commandes et factures</h3>
+          <p class="project-card__excerpt">Identifier systématiquement les écarts entre commandes émises et commandes facturées.</p>
+          <p class="project-card__result"><strong>15,3&nbsp;M€</strong> de sous-facturation identifiée</p>
+          <button type="button" class="btn btn--ghost project-card__trigger" aria-haspopup="dialog" aria-controls="modal-projet-4" data-open-modal="modal-projet-4">
+            Voir l'étude de cas <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </button>
+        </article>
+
+        <!-- ---------- Carte Projet 5 ---------- -->
+        <article class="project-card" data-animate>
+          <p class="project-card__number">05</p>
+          <h3 class="project-card__title">Contrôle qualité d'une base de données réglementaire nationale de traçabilité animale</h3>
+          <p class="project-card__excerpt">Garantir la fiabilité et la conformité réglementaire de données transmises par plusieurs centaines d'opérateurs.</p>
+          <p class="project-card__result"><strong>47,4&nbsp;M</strong> d'animaux notifiés pilotés</p>
+          <button type="button" class="btn btn--ghost project-card__trigger" aria-haspopup="dialog" aria-controls="modal-projet-5" data-open-modal="modal-projet-5">
+            Voir l'étude de cas <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================
+       5. AUTRES PROJETS / EXPÉRIENCES
+       ================================================================== -->
+  <section id="experiences" class="section section--alt" aria-labelledby="experiences-title">
+    <div class="container">
+      <p class="section__kicker" data-animate>Autres expériences</p>
+      <h2 id="experiences-title" class="section__title" data-animate>Autres projets &amp; missions</h2>
+
+      <div class="mini-card-grid">
+
+        <article class="mini-card" data-animate>
+          <div class="mini-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-data-quality"></use></svg></div>
+          <h3 class="mini-card__title">INTERBEV</h3>
+          <p class="mini-card__subtitle">Data Quality &amp; données métier</p>
+          <p class="mini-card__desc">Contrôle de plusieurs millions d'enregistrements, analyse de la qualité et de la complétude des données, production d'indicateurs et extractions métier.</p>
+        </article>
+
+        <article class="mini-card" data-animate>
+          <div class="mini-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg></div>
+          <h3 class="mini-card__title">Projet SQL / ERP</h3>
+          <p class="mini-card__subtitle">Analyse &amp; extraction de données</p>
+          <p class="mini-card__desc">Extraction, transformation et analyse de données issues de systèmes métiers.</p>
+        </article>
+
+        <article class="mini-card" data-animate>
+          <div class="mini-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-bi"></use></svg></div>
+          <h3 class="mini-card__title">Power BI</h3>
+          <p class="mini-card__subtitle">Business Intelligence</p>
+          <p class="mini-card__desc">Conception de tableaux de bord, mesures DAX, transformations Power Query et indicateurs de pilotage.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================
+       6. CONTACT
+       ================================================================== -->
+  <section id="contact" class="section section--dark" aria-labelledby="contact-title">
+    <div class="hero__bg hero__bg--footer" aria-hidden="true">
+      <svg class="hero__nodes" viewBox="0 0 900 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g stroke="#FB7A1F" stroke-width="1" fill="none" opacity="0.25">
+          <path d="M40 60 L220 160 L420 80 L620 180 L860 100"/>
+        </g>
+        <g fill="#FB7A1F">
+          <circle cx="40" cy="60" r="3.5"/><circle cx="220" cy="160" r="3.5"/><circle cx="420" cy="80" r="3.5"/>
+          <circle cx="620" cy="180" r="3.5"/><circle cx="860" cy="100" r="3.5"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="container contact__inner">
+      <p class="section__kicker section__kicker--onDark" data-animate>Contact</p>
+      <h2 id="contact-title" class="section__title section__title--onDark" data-animate>
+        Discutons de votre projet de fiabilisation des données
+      </h2>
+      <p class="contact__promise" data-animate>
+        « Fiabiliser la donnée. Sécuriser la décision. » — Échangeons sur vos enjeux de facturation, de qualité
+        de données ou de pilotage Power BI, avant l'échéance du 1er&nbsp;septembre&nbsp;2026.
+      </p>
+
+      <div class="contact__grid" data-animate>
+        <!-- Coordonnées réelles d'Ahmed Ali SOILIHI -->
+        <a class="contact__item" href="mailto:ahmedali.soilihi@soradev-consulting.fr">
+          <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+          <span>
+            <span class="contact__item-label">E-mail</span>
+            <span class="contact__item-value">ahmedali.soilihi@soradev-consulting.fr</span>
+          </span>
+        </a>
+        <a class="contact__item" href="tel:+33651499899">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+          <span>
+            <span class="contact__item-label">Téléphone</span>
+            <span class="contact__item-value">06 51 49 98 99</span>
+          </span>
+        </a>
+        <a class="contact__item" href="https://www.linkedin.com/in/ahmed-ali.soilihi" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+          <span>
+            <span class="contact__item-label">LinkedIn</span>
+            <span class="contact__item-value">/in/ahmed-ali.soilihi</span>
+          </span>
+        </a>
+      </div>
+
+      <a href="mailto:ahmedali.soilihi@soradev-consulting.fr?subject=Projet%20de%20fiabilisation%20des%20donn%C3%A9es" class="btn btn--accent btn--lg" data-animate>
+        Discutons de votre projet de fiabilisation des données
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ====================================================================
+     PIED DE PAGE
+     ==================================================================== -->
+<footer class="site-footer" id="site-footer">
+  <div class="container site-footer__inner">
+
+    <div class="site-footer__brand">
+      <p class="site-footer__logo">
+        <span class="brand__fallback-sora">SORA</span><span class="brand__fallback-dev">-DEV</span> CONSULTING
+      </p>
+      <p class="site-footer__baseline">Fiabiliser la donnée. Sécuriser la décision.</p>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Navigation du pied de page">
+      <a href="#accueil">Accueil</a>
+      <a href="#profil">Qui suis-je</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="site-footer__legal">
+      <p>© <span id="current-year">2026</span> SORADEV CONSULTING — Ahmed Ali SOILIHI. Tous droits réservés.</p>
+      <p>Consultant indépendant · Île-de-France · SIRET : à compléter</p>
+      <!-- TODO : lier vers de véritables pages de mentions légales / confidentialité si elles sont créées -->
+      <p><a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a></p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Bouton retour en haut de page -->
+<button type="button" id="back-to-top" class="back-to-top" aria-label="Retourner en haut de la page">
+  <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+</button>
+
+<!-- ====================================================================
+     MODALES PROJETS — <dialog> natif, trame fixe en 6 rubriques.
+     Fermeture : bouton dédié, touche Échap (native) ou clic sur le fond.
+     ==================================================================== -->
+
+<!-- ---------- MODALE PROJET 1 ---------- -->
+<dialog class="project-modal" id="modal-projet-1" aria-labelledby="modal-projet-1-title" role="dialog" aria-modal="true"
+  <div class="project-modal__inner">
+    <button type="button" class="project-modal__close" data-close-modal aria-label="Fermer l'étude de cas">
+      <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+
+    <p class="project-modal__eyebrow">Étude de cas 01</p>
+    <h3 id="modal-projet-1-title" class="project-modal__title">Analyse et réduction du taux d'avoirs sur le cycle de facturation</h3>
+
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-question"></use></svg>Problématique</h4>
+      <p>Pourquoi les avoirs représentent-ils une part importante du chiffre d'affaires facturé, et comment en identifier les principaux motifs pour agir sur les causes racines&nbsp;?</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg>Données mobilisées</h4>
+      <p>Nombre et montant des avoirs, motif d'avoir (<strong class="hl">plus de 14 catégories</strong>), client, agence, année d'émission.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-flow"></use></svg>Méthodologie</h4>
+      <p class="rubric__flow">Extraction des avoirs → Classification par motif (erreur de prix, erreur client, doublon de facture, erreur de commande…) → Quantification par client et par année → Remontée aux causes racines (multiplicité de codes client, erreurs de devise, incohérences TVA) → Mise en place de contrôles préventifs → Suivi de l'évolution dans le temps.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>Analyse</h4>
+      <p><strong class="hl">5&nbsp;053 avoirs</strong> représentant <strong class="hl">194&nbsp;M€</strong> sur la période 2022-2025. Motif principal identifié : erreur de prix (<strong class="hl">515 avoirs</strong>, soit environ <strong class="hl">76&nbsp;%</strong> du montant total des avoirs). Causes racines documentées par des exemples concrets : un même client porteur de plusieurs codes clients, devise erronée, absence de champ TVA sur l'écran de saisie.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-screen"></use></svg>Présentation</h4>
+      <p>Dashboard Power BI multi-pages : vue globale par année, détail du nombre et du montant d'avoirs par client, détail par motif avec code couleur de criticité, évolution temporelle croisée client / motif avec filtres dynamiques.</p>
+      <div class="dashboard-gallery">
+        <figure class="dashboard-frame">
+          <div class="dashboard-frame__bar">
+            <span class="dashboard-frame__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="dashboard-frame__title">Power BI · Vue d'ensemble</span>
+          </div>
+          <img src="assets/projet-1-dashboard-1.jpg" alt="Dashboard Power BI : montant des avoirs et des factures par année, avec taux d'avoir global (données de clients anonymisées)." loading="lazy" width="1400" height="1027" class="dashboard-frame__img">
+          <figcaption class="dashboard-frame__caption">Vue globale : montant avoirs / factures par année et taux d'avoir en baisse continue.</figcaption>
+        </figure>
+        <figure class="dashboard-frame">
+          <div class="dashboard-frame__bar">
+            <span class="dashboard-frame__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="dashboard-frame__title">Power BI · Détail par motif</span>
+          </div>
+          <img src="assets/projet-1-dashboard-2.jpg" alt="Dashboard Power BI : montant des avoirs ventilé par motif, avec table de détail par client anonymisé." loading="lazy" width="1400" height="937" class="dashboard-frame__img">
+          <figcaption class="dashboard-frame__caption">Détail par motif : l'erreur de prix concentre l'essentiel du montant des avoirs.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="rubric rubric--results">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg>Résultats</h4>
+      <div class="result-highlight">
+        <div class="result-highlight__figure">
+          <span class="result-highlight__number">-15,9&nbsp;pts</span>
+          <span class="result-highlight__label">de taux d'avoirs dans le chiffre d'affaires facturé, entre 2023 et 2025</span>
+        </div>
+
+        <!-- Mini-graphique de tendance SVG, animé au tracé lors de l'ouverture de la modale -->
+        <svg class="trend-chart" viewBox="0 0 260 120" role="img" aria-label="Évolution du taux d'avoirs : 24,3 % en 2023, 8,4 % en 2025">
+          <line x1="30" y1="10" x2="30" y2="95" class="trend-chart__axis"/>
+          <line x1="30" y1="95" x2="240" y2="95" class="trend-chart__axis"/>
+          <polyline points="50,25 210,80" class="trend-chart__line"/>
+          <circle cx="50" cy="25" r="4.5" class="trend-chart__dot"/>
+          <circle cx="210" cy="80" r="4.5" class="trend-chart__dot"/>
+          <text x="50" y="15" class="trend-chart__value">24,3 %</text>
+          <text x="50" y="110" class="trend-chart__year">2023</text>
+          <text x="210" y="70" class="trend-chart__value">8,4 %</text>
+          <text x="210" y="110" class="trend-chart__year">2025</text>
+        </svg>
+      </div>
+      <p>Réduction obtenue à la suite de la mise en place de contrôles préventifs en amont de la facturation.</p>
+    </div>
+  </div>
+</dialog>
+
+<!-- ---------- MODALE PROJET 2 ---------- -->
+<dialog class="project-modal" id="modal-projet-2" aria-labelledby="modal-projet-2-title" role="dialog" aria-modal="true"
+  <div class="project-modal__inner">
+    <button type="button" class="project-modal__close" data-close-modal aria-label="Fermer l'étude de cas">
+      <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+
+    <p class="project-modal__eyebrow">Étude de cas 02</p>
+    <h3 id="modal-projet-2-title" class="project-modal__title">Audit et Data Quality du processus de facturation</h3>
+
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-question"></use></svg>Problématique</h4>
+      <p>Comment identifier les anomalies dans un processus de facturation fortement automatisé et dématérialisé&nbsp;?</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg>Données mobilisées</h4>
+      <p>Commandes, factures, avoirs, référentiel clients, montants, dates, statuts — soit <strong class="hl">5 tables sources</strong> extraites de l'ERP Qualiac, dont une table de journal de <strong class="hl">109&nbsp;962 lignes</strong> et un référentiel client de <strong class="hl">396 lignes</strong>.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-flow"></use></svg>Méthodologie</h4>
+      <p class="rubric__flow">Extraction (ERP Qualiac) → Nettoyage → Rapprochement → Contrôle → Classification des anomalies → Quantification → Restitution Power BI.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>Analyse</h4>
+      <p>Contrôle de complétude et de cohérence du référentiel client ; détection des <strong class="hl">doublons de codes clients</strong> pour un même tiers ; identification des erreurs de devise (ex. clients domiciliés au Royaume-Uni facturés en EUR au lieu de GBP) et des incohérences de régime TVA.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-screen"></use></svg>Présentation</h4>
+      <p>Page de synthèse Power BI avec indicateurs globaux, filtres dynamiques par client et par année, tableaux de détail exportables pour traitement métier.</p>
+      <figure class="dashboard-frame">
+        <div class="dashboard-frame__bar">
+          <span class="dashboard-frame__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="dashboard-frame__title">Power BI · Nombre d'avoirs par motif</span>
+        </div>
+        <img src="assets/projet-2-dashboard-1.jpg" alt="Graphique Power BI du nombre d'avoirs par motif, du plus fréquent au plus rare, sur 15 catégories." loading="lazy" width="1400" height="937" class="dashboard-frame__img">
+        <figcaption class="dashboard-frame__caption">15 catégories de motifs qualifiées et quantifiées pour cibler les actions correctives prioritaires.</figcaption>
+      </figure>
+    </div>
+    <div class="rubric rubric--results">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg>Résultats</h4>
+      <div class="stat-tiles">
+        <div class="stat-tile">
+          <span class="stat-tile__number">5&nbsp;053</span>
+          <span class="stat-tile__label">avoirs intégralement nettoyés dans la base métier</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- ---------- MODALE PROJET 3 ---------- -->
+<dialog class="project-modal" id="modal-projet-3" aria-labelledby="modal-projet-3-title" role="dialog" aria-modal="true"
+  <div class="project-modal__inner">
+    <button type="button" class="project-modal__close" data-close-modal aria-label="Fermer l'étude de cas">
+      <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+
+    <p class="project-modal__eyebrow">Étude de cas 03</p>
+    <h3 id="modal-projet-3-title" class="project-modal__title">Dashboard de pilotage de la qualité et de la facturation</h3>
+
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-question"></use></svg>Problématique</h4>
+      <p>Comment offrir à des utilisateurs métier non techniques une vision consolidée et actionnable de la qualité des données de facturation&nbsp;?</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg>Données mobilisées</h4>
+      <p>Agrégation des données de facturation, de commandes et d'avoirs (études de cas 01 à 02) au niveau mensuel et annuel, par client et par agence.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-flow"></use></svg>Méthodologie</h4>
+      <p class="rubric__flow rubric__flow--chain">
+        <span>SQL</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        <span>Power Query</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        <span>Modèle relationnel</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        <span>DAX</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        <span>Power BI</span>
+      </p>
+      <p>Modèle en tables de dimension et de faits, avec une dimension calendrier ISO&nbsp;8601.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>Analyse</h4>
+      <p>Page d'accueil avec indicateurs clés (chiffre d'affaires facturé, nombre de factures, nombre d'avoirs, taux d'avoirs, montant des anomalies, commandes non facturées) ; pages d'analyse dédiées à l'évolution mensuelle et annuelle, aux clients, aux agences, aux motifs et aux anomalies, avec fonctionnalité de <strong class="hl">drill-through</strong>.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-screen"></use></svg>Présentation</h4>
+      <p>Application de la charte graphique SORADEV (navy #00265A, orange #FB7A1F), navigation par bandeau latéral, filtres dynamiques multi-niveaux, export des données de détail.</p>
+      <figure class="dashboard-frame">
+        <div class="dashboard-frame__bar">
+          <span class="dashboard-frame__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="dashboard-frame__title">Power BI · Écran de recherche multi-filtres</span>
+        </div>
+        <img src="assets/projet-3-dashboard-1.jpg" alt="Écran de recherche multicritère Power BI connecté à l'ERP Qualiac ; la colonne Client est masquée pour préserver la confidentialité." loading="lazy" width="1400" height="937" class="dashboard-frame__img">
+        <figcaption class="dashboard-frame__caption">Recherche multicritère par facture, motif et année. <em>Colonne « Client » masquée pour préserver la confidentialité contractuelle.</em></figcaption>
+      </figure>
+    </div>
+    <div class="rubric rubric--results">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg>Résultats</h4>
+      <p>Outil de pilotage <strong class="hl">réutilisable et transposable</strong> à d'autres contextes clients, démontrant la maîtrise de bout en bout de la chaîne technique SQL → Power Query → Modèle relationnel → DAX → Power BI.</p>
+    </div>
+  </div>
+</dialog>
+
+<!-- ---------- MODALE PROJET 4 ---------- -->
+<dialog class="project-modal" id="modal-projet-4" aria-labelledby="modal-projet-4-title" role="dialog" aria-modal="true"
+  <div class="project-modal__inner">
+    <button type="button" class="project-modal__close" data-close-modal aria-label="Fermer l'étude de cas">
+      <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+
+    <p class="project-modal__eyebrow">Étude de cas 04</p>
+    <h3 id="modal-projet-4-title" class="project-modal__title">Détection automatisée des écarts entre commandes et factures</h3>
+
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-question"></use></svg>Problématique</h4>
+      <p>Comment identifier de façon systématique les écarts entre commandes émises et commandes facturées, sur un flux de plusieurs milliers de commandes annuelles&nbsp;?</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg>Données mobilisées</h4>
+      <p>Statut de commande (émise, fermée, annulée), montant commandé, montant facturé, référence et date de commande.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-flow"></use></svg>Méthodologie</h4>
+      <p class="rubric__flow">Commande → Recherche de la facture correspondante → Comparaison montant / statut / quantité / date → Classification de l'écart → Calcul de KPI → Déclenchement de l'action métier associée.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>Analyse</h4>
+      <p>Ventilation des écarts par statut de commande, avec exemples chiffrés : commandes annulées (<strong class="hl">1,225&nbsp;M€</strong> commandés pour <strong class="hl">1,708&nbsp;M€</strong> restant à régulariser), commandes fermées (<strong class="hl">2,391&nbsp;M€</strong> commandés, <strong class="hl">57,5&nbsp;K€</strong> d'écart résiduel), commandes émises (<strong class="hl">33,2&nbsp;M€</strong> commandés, <strong class="hl">2,221&nbsp;M€</strong> restant à facturer).</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-screen"></use></svg>Présentation</h4>
+      <p>Écran de recherche multicritère développé sous Power BI (client, chantier, commande, période), en connexion directe à l'ERP Qualiac, se substituant à un parcours de consultation manuel à plusieurs étapes.</p>
+      <div class="dashboard-gallery">
+        <figure class="dashboard-frame">
+          <div class="dashboard-frame__bar">
+            <span class="dashboard-frame__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="dashboard-frame__title">Power BI · Répartition des écarts</span>
+          </div>
+          <img src="assets/projet-4-dashboard-1.jpg" alt="Graphique Power BI de répartition du reste à facturer par statut de commande : partiellement facturée, non facturée, intégralement facturée, surfacturée." loading="lazy" width="1400" height="937" class="dashboard-frame__img">
+          <figcaption class="dashboard-frame__caption">15,3 M€ de commandes partiellement facturées identifiées et priorisées pour régularisation.</figcaption>
+        </figure>
+        <figure class="dashboard-frame">
+          <div class="dashboard-frame__bar">
+            <span class="dashboard-frame__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="dashboard-frame__title">Power BI · Détail par commande</span>
+          </div>
+          <img src="assets/projet-4-dashboard-2.jpg" alt="Table de détail Power BI listant chaque commande, son statut et le reste à facturer, filtrable par client anonymisé." loading="lazy" width="1400" height="1053" class="dashboard-frame__img">
+          <figcaption class="dashboard-frame__caption">Table de détail exploitable pour lancer les régularisations commande par commande.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="rubric rubric--results">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg>Résultats</h4>
+
+      <div class="stat-tiles stat-tiles--three">
+        <div class="stat-tile">
+          <span class="stat-tile__number">917&nbsp;723&nbsp;€</span>
+          <span class="stat-tile__label">Commandes non facturées</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-tile__number">15&nbsp;309&nbsp;601&nbsp;€</span>
+          <span class="stat-tile__label">Sous-facturation identifiée</span>
+        </div>
+        <div class="stat-tile stat-tile--negative">
+          <span class="stat-tile__number">-428&nbsp;006&nbsp;€</span>
+          <span class="stat-tile__label">Surfacturation identifiée</span>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Ventilation des écarts commandes / factures par statut de commande</caption>
+          <thead>
+            <tr>
+              <th scope="col">Type de commande</th>
+              <th scope="col">Statut</th>
+              <th scope="col" class="data-table__num">Montant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="data-table__group">
+              <th scope="row" rowspan="3">Partiellement facturées</th>
+              <td>Annulée</td><td class="data-table__num">1&nbsp;124&nbsp;554&nbsp;€</td>
+            </tr>
+            <tr><td>Fermée</td><td class="data-table__num">189&nbsp;406&nbsp;€</td></tr>
+            <tr><td>Émise</td><td class="data-table__num">13&nbsp;995&nbsp;641&nbsp;€</td></tr>
+            <tr class="data-table__subtotal"><th scope="row" colspan="2">Sous-total</th><td class="data-table__num">15&nbsp;309&nbsp;601&nbsp;€</td></tr>
+
+            <tr class="data-table__group">
+              <th scope="row" rowspan="3">Non facturées</th>
+              <td>Annulée</td><td class="data-table__num">86&nbsp;766&nbsp;€</td>
+            </tr>
+            <tr><td>Fermée</td><td class="data-table__num">48&nbsp;316&nbsp;€</td></tr>
+            <tr><td>Émise</td><td class="data-table__num">782&nbsp;641&nbsp;€</td></tr>
+            <tr class="data-table__subtotal"><th scope="row" colspan="2">Sous-total</th><td class="data-table__num">917&nbsp;723&nbsp;€</td></tr>
+
+            <tr class="data-table__group">
+              <th scope="row" rowspan="2">Intégralement facturées</th>
+              <td>Fermée</td><td class="data-table__num">3&nbsp;€</td>
+            </tr>
+            <tr><td>Émise</td><td class="data-table__num">10&nbsp;€</td></tr>
+            <tr class="data-table__subtotal"><th scope="row" colspan="2">Sous-total</th><td class="data-table__num">13&nbsp;€</td></tr>
+
+            <tr class="data-table__group">
+              <th scope="row" rowspan="2">Surfacturées</th>
+              <td>Fermée</td><td class="data-table__num">-1&nbsp;025&nbsp;€</td>
+            </tr>
+            <tr><td>Émise</td><td class="data-table__num">-426&nbsp;981&nbsp;€</td></tr>
+            <tr class="data-table__subtotal"><th scope="row" colspan="2">Sous-total</th><td class="data-table__num">-428&nbsp;006&nbsp;€</td></tr>
+          </tbody>
+          <tfoot>
+            <tr class="data-table__total">
+              <th scope="row" colspan="2">Total</th>
+              <td class="data-table__num">15&nbsp;799&nbsp;331&nbsp;€</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- ---------- MODALE PROJET 5 ---------- -->
+<dialog class="project-modal" id="modal-projet-5" aria-labelledby="modal-projet-5-title" role="dialog" aria-modal="true"
+  <div class="project-modal__inner">
+    <button type="button" class="project-modal__close" data-close-modal aria-label="Fermer l'étude de cas">
+      <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+
+    <p class="project-modal__eyebrow">Étude de cas 05</p>
+    <h3 id="modal-projet-5-title" class="project-modal__title">Contrôle qualité d'une base de données réglementaire nationale de traçabilité animale</h3>
+
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-question"></use></svg>Problématique</h4>
+      <p>Comment garantir la fiabilité et la conformité réglementaire de données de traçabilité transmises par plusieurs centaines d'opérateurs, sur un volume de plusieurs millions d'enregistrements&nbsp;?</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg>Données mobilisées</h4>
+      <p>Tables de la Base de Données Nationale d'Identification (Exploitation : <strong class="hl">340&nbsp;702 lignes</strong> ; Activité : <strong class="hl">661&nbsp;549 lignes</strong> ; Recensement ovin-caprin : <strong class="hl">394&nbsp;624 lignes</strong>) et tables OVINFOS (notifications de mouvements : <strong class="hl">6&nbsp;276&nbsp;374 lignes</strong> ; mouvements bloqués : <strong class="hl">163&nbsp;517 lignes</strong> ; fichiers de transmission : <strong class="hl">565&nbsp;468 lignes</strong>).</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-flow"></use></svg>Méthodologie</h4>
+      <p class="rubric__flow">Contrôle de complétude → Contrôle de cohérence → Application des règles métier (délai réglementaire de notification fixé à 7 jours) → Détection des anomalies et des mouvements bloqués → Calcul d'indicateurs par opérateur → Extraction documentaire à destination des services vétérinaires.</p>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>Analyse</h4>
+      <p>Suivi du délai moyen de notification par année (réduction observée de <strong class="hl">15 jours en 2017</strong> à <strong class="hl">8 jours en 2022</strong>) ; répartition des mouvements bloqués par nature (corrigés / non corrigés) ; ventilation des mouvements notifiés par tranche de délai réglementaire.</p>
+
+      <!-- Mini-graphique de tendance : délai moyen de notification -->
+      <svg class="trend-chart trend-chart--compact" viewBox="0 0 260 120" role="img" aria-label="Évolution du délai moyen de notification : 15 jours en 2017, 8 jours en 2022">
+        <line x1="30" y1="10" x2="30" y2="95" class="trend-chart__axis"/>
+        <line x1="30" y1="95" x2="240" y2="95" class="trend-chart__axis"/>
+        <polyline points="50,30 210,75" class="trend-chart__line"/>
+        <circle cx="50" cy="30" r="4.5" class="trend-chart__dot"/>
+        <circle cx="210" cy="75" r="4.5" class="trend-chart__dot"/>
+        <text x="50" y="20" class="trend-chart__value">15 jours</text>
+        <text x="50" y="110" class="trend-chart__year">2017</text>
+        <text x="205" y="65" class="trend-chart__value">8 jours</text>
+        <text x="210" y="110" class="trend-chart__year">2022</text>
+      </svg>
+    </div>
+    <div class="rubric">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-screen"></use></svg>Présentation</h4>
+      <p>Dashboard Power BI avec indicateurs de synthèse, filtrable par type d'opérateur (abattoir, centre de rassemblement, exploitation, marché) et par année.</p>
+      <figure class="dashboard-frame">
+        <div class="dashboard-frame__bar">
+          <span class="dashboard-frame__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="dashboard-frame__title">Power BI · Traçabilité animale</span>
+        </div>
+        <img src="assets/projet-5-dashboard-1.jpg" alt="Dashboard Power BI de traçabilité animale : délai moyen de notification par année et répartition des mouvements bloqués par nature." loading="lazy" width="1400" height="937" class="dashboard-frame__img">
+        <figcaption class="dashboard-frame__caption">Délai moyen de notification et mouvements bloqués suivis par année et par type d'opérateur.</figcaption>
+      </figure>
+    </div>
+    <div class="rubric rubric--results">
+      <h4 class="rubric__title"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg>Résultats</h4>
+      <div class="stat-tiles stat-tiles--three">
+        <div class="stat-tile">
+          <span class="stat-tile__number">1,137&nbsp;M</span>
+          <span class="stat-tile__label">mouvements notifiés</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-tile__number">47,4&nbsp;M</span>
+          <span class="stat-tile__label">animaux notifiés</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-tile__number">9&nbsp;872</span>
+          <span class="stat-tile__label">mouvements bloqués</span>
+        </div>
+      </div>
+      <p>Pilotage réglementaire fiabilisé pour l'ensemble des opérateurs de la filière ovine et caprine ; réduction du délai moyen de notification ; production d'extractions documentées appuyant les contrôles administratifs des services vétérinaires des préfectures.</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
